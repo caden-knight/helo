@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from '@testing-library/react';
+import Nav from "../Nav/Nav";
 
 export default class Form extends Component {
 	constructor() {
@@ -7,6 +8,11 @@ export default class Form extends Component {
 	}
 
 	render() {
-		return <div>Form</div>;
+		return (
+			<div>
+				<Nav />
+				<div>Form</div>
+			</div>
+		);
 	}
 }
