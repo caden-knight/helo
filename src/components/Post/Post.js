@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import { render } from '@testing-library/react';
+import Nav from "../Form/Form";
 
 export default class Post extends Component {
-	constructor() {
-		super();
-	}
+    constructor() {
+        super();
+    }
 
-	render() {
-		return (
-        <div>Post</div>
-        
+    render() {
+        return (
+            <div>
+                <Nav />
+                <div>Post</div>
+            </div>
+
         );
-	}
+    }
 }
